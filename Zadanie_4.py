@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from streamlit_autorefresh import st_autorefresh
+# from streamlit_autorefresh import st_autorefresh
 import kaggle
 from kaggle.api.kaggle_api_extended import KaggleApi
 import plotly.graph_objects as go
@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Russia Ukraine War Dashboard", page_icon=":crossed_swords:", layout="wide")
 
 # ---- PAGE TIME REFREASH ----
-st_autorefresh(interval=60 * 60 * 1000, key="dataframerefresh")
+# st_autorefresh(interval=60 * 60 * 1000, key="dataframerefresh")
 
 # ---- KAGGLE API ----
 api = KaggleApi("C:\STUDIA\Semestr_VI\Wizualizacja i raportowanie danych\Zadanie_3.jpg")
