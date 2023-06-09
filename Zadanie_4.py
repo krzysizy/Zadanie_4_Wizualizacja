@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from streamlit_autorefresh import st_autorefresh
+# from streamlit_autorefresh import st_autorefresh
 import kaggle
 from kaggle.api.kaggle_api_extended import KaggleApi
 import plotly.graph_objects as go
