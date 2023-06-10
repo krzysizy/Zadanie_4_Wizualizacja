@@ -93,6 +93,6 @@ df_selection = rle.loc[:, categories_with_days]
 df_selection = df_selection[df_selection['day'].between(days[0], days[1])]
 
 # ---- MAIN PAGE ----
-st.title(":bar_chart: Russia Ukraine War Dashboard")
+st.title(":bar_chart: Russia Equipment losses in Russia Ukraine War Dashboard")
 categories.remove('day')
 get_heatmap(df_selection, categories)
