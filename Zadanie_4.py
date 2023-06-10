@@ -30,10 +30,9 @@ def change_data (column_name, df):
 def get_data_from_kaggle():
     # api.dataset_download_file('piterfm/2022-ukraine-russian-war', 
     #                             file_name = 'russia_losses_equipment.csv')
-    # df = pd.read_csv('russia_losses_equipment.csv')
-    # df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
-    # df = df.dropna(axis=1, how='any')
     df = pd.read_csv('russia_losses_equipment.csv')
+    df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+    df = df.dropna(axis=1, how='any')
     return df
 
 # ---- HEATMAP ----
