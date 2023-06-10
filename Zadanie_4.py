@@ -12,8 +12,8 @@ st.set_page_config(page_title="Russia Ukraine War Dashboard", page_icon=":crosse
 st_autorefresh(interval=60 * 60 * 1000, key="dataframerefresh")
 
 # ---- KAGGLE API ----
-# api = KaggleApi("C:\STUDIA\Semestr_VI\Wizualizacja i raportowanie danych\Zadanie_3.jpg")
-# api.authenticate()
+api = KaggleApi()
+api.authenticate()
 
 # ---- CHANGE DATA ----
 def change_data (column_name, df):
