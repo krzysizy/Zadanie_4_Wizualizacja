@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
 from streamlit_autorefresh import st_autorefresh
-# import kaggle
-# from kaggle.api.kaggle_api_extended import KaggleApi
+import kaggle
+from kaggle.api.kaggle_api_extended import KaggleApi
 import plotly.graph_objects as go
 
 # ---- PAGE CONFIG ----
@@ -33,7 +33,8 @@ def get_data_from_kaggle():
     # df = pd.read_csv('russia_losses_equipment.csv')
     # df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
     # df = df.dropna(axis=1, how='any')
-    return pd.read_csv('russia_losses_equipment.csv')
+    df = pd.read_csv('russia_losses_equipment.csv')
+    return df
 
 # ---- HEATMAP ----
 def get_heatmap(df, columns):
