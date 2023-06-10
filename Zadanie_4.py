@@ -6,7 +6,7 @@ from streamlit_autorefresh import st_autorefresh
 import plotly.graph_objects as go
 
 # ---- PAGE CONFIG ----
-st.set_page_config(page_title="Russia Ukraine War Dashboard", page_icon=":crossed_swords:", layout="wide")
+st.set_page_config(page_title="Russia Equipment losses in Russia Ukraine War Dashboard", page_icon=":crossed_swords:", layout="wide")
 
 # ---- PAGE TIME REFREASH ----
 st_autorefresh(interval=60 * 60 * 1000, key="dataframerefresh")
