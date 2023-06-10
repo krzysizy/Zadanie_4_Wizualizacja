@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Russia Equipment losses in Russia Ukraine War Dashboard", page_icon=":crossed_swords:", layout="wide")
 
 # ---- PAGE TIME REFREASH ----
-st_autorefresh(interval=60 * 60 * 1000, key="dataframerefresh")
+st_autorefresh(interval=1 * 60 * 1000, key="dataframerefresh")
 
 # ---- KAGGLE API ----
 # api = KaggleApi()
