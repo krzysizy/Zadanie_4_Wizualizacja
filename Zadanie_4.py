@@ -55,7 +55,7 @@ def get_heatmap(df, columns):
                         
                         hoverongaps = False))
         fig.layout.height = 700
-        fig.layout.width = 1000
+        fig.layout.width = st.screen_width()
 
         tab1, tab2 = st.tabs(["Default theme", "Native theme"])
         with tab1:
