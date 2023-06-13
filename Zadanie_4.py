@@ -76,7 +76,7 @@ for c in rle_columns_without_date_day:
 st.sidebar.header("Please Filter Here:")
 
 days = st.sidebar.slider(
-     'Select a range of values',
+     'Select days:',
      int(rle['day'].iloc[0]), int(rle['day'].iloc[-1]), (int(rle['day'].iloc[0]), int(rle['day'].iloc[-1])))
 
 categories = st.sidebar.multiselect(
