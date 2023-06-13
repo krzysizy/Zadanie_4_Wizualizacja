@@ -55,7 +55,8 @@ def get_heatmap(df, columns):
                         
                         hoverongaps = False))
         fig.layout.height = 700
-        fig.layout.width = st.screen_width()
+        fig.layout.width = 1000
+        
 
         tab1, tab2 = st.tabs(["Default theme", "Native theme"])
         with tab1:
@@ -96,3 +97,4 @@ df_selection = df_selection[df_selection['day'].between(days[0], days[1])]
 st.title(":bar_chart: Russia Equipment losses in Russia Ukraine War Dashboard")
 categories.remove('day')
 get_heatmap(df_selection, categories)
+
